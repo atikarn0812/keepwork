@@ -1,0 +1,137 @@
+/* .kuyyai{
+    display: inline;
+}
+body {
+    background-color: black; 
+    height: 100vh;          
+    margin: 0;             
+    display: flex;           
+    justify-content: center;
+    align-items: center;    
+}
+.createdog{
+    width: 500px;
+    background-color: bisque;
+    padding: 20px 50px;
+} */
+.textH1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , auto);
+    grid-template-areas: 
+    "header header header"
+    "menu main main"
+    "menu main main"
+    ;
+}
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 100px auto 50px;
+    column-gap: 20px;
+    padding: 10px 30px;
+}
+
+.menu{
+    grid-area: menu;
+}
+.main{
+    grid-area: main;
+}
+.item{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    border-radius: 3px;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* หรือใช้ grid-column: 1/4;
+    grid-column: 1/span 3;
+    */
+}
+.searchDog{
+    width: auto;
+    padding: 3px 3px;
+    height: 30px;
+}
+.dog{
+    width: 50px;
+    height: 50px;
+}
+/* .item-menu{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    border-radius: 3px;
+    grid-area: menu; */
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+        /* หรือใช้ grid-row: 2/4;
+    grid-column: 2/span 3;
+    */
+
+ /* .item-main{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    border-radius: 3px;
+    grid-area: main;
+}  */
+/*  
+.item-right{
+    background-color: aqua;
+    border: 2px solid red;
+    grid-area: right;
+}
+.item-footer{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    border-radius: 3px;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* grid-area: footer; }
+     */
+
+/* .item{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    border-radius: 3px;
+} */
+/* .item-header{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    grid-column: 1/span 3;
+}
+.item-bar{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    grid-row: 2/5;
+}
+.item-footer{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    grid-column: 1/4;
+}
+.item-con1{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    grid-area: 2/2/5/3;
+} */
+ /* .item-footer{
+    background-color: aqua;
+    border: 2px solid red;
+    box-shadow: 5px;
+    grid-area: 1 / 2 / 5 / 6 ;
+} */

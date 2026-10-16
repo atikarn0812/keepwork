@@ -1,0 +1,73 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer"
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+.imgdog{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.imgdog img{
+    width: 80px;
+    height: 80px;
+}
+.linktab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: gray;
+    padding: 5px 10px;
+    color: black;
+}
+.linktab a{
+    color: black;
+    text-decoration: none;
+}
+
+.main{
+    grid-area: main;
+    padding: 20px 10px;
+}
+.productdog{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+    
+.item{
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: rgb(198, 198, 197);
+}
+.item img{
+    width: 100px;
+    height: 100px;
+}
+.btnbuy:hover{
+    background-color: rgb(103, 103, 192);
+    color: aliceblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+}
+.textF{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
